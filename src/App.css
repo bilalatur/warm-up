@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* Header */
+.header-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+.navlink-header{
+    margin: 1%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navlink-header:hover{
+    margin: 1%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navlink-home{
+    border-right: 2px solid;
+    padding-right: 2%;
+}
+/* Edit Form*/
+.edit-form{
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.label-form{
+    margin: 1%;
+}
+.input-form{
+    margin-left: 1%;
+}
