@@ -1,4 +1,6 @@
 import React from 'react';
+
+//Components
 import BlogEntry from './BlogEntry';
 
 function Home(){

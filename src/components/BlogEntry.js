@@ -1,4 +1,8 @@
 import React from 'react';
+import {Switch,Route,NavLink} from 'react-router-dom';
+
+//Components
+import EditForm from './EditForm'
 
 class BlogEntry extends React.Component{
     constructor(props){
@@ -29,13 +33,7 @@ class BlogEntry extends React.Component{
             )
         }
 
-
-        componentDidUpdate(){
-            console.log("Me actualicé")
-        }
-
         render(){
-            console.log("Estoy renderizando")
             let contenido;
             if(this.state.entry === []){
                 contenido = <p>Cargando...</p>
@@ -46,7 +44,10 @@ class BlogEntry extends React.Component{
                         <div key={i} className="col-12 div-entry"> 
                             <p className="col-12 col-md-9 p-entry">{item.title}</p>
                             <a href={"https://jsonplaceholder.typicode.com/posts/"+item.id}  className="col-4 col-md-1"><button className="entry-btn">Ver</button></a>
-                            <a href={"https://jsonplaceholder.typicode.com/posts/"+item.id} className="col-4 col-md-1"><button className="entry-btn">Editar</button></a>
+                            <NavLink exact to={"/edit/"+item.id}><button className="entry-btn">Editar</button></NavLink>
+                            <Switch>
+                                <Route exact path={"/edit/"+item.id} component={EditForm}/>
+                            </Switch>
                             <a href={"https://jsonplaceholder.typicode.com/posts/"+item.id} className="col-4 col-md-1"><button className="entry-btn">Borrar</button></a>
                         </div>
                     )}

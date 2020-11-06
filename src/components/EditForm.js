@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CreateForm(){
+function EditForm(){
     return (
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" className="edit-form col-12">
             <label className="label-form col-12"> Titulo </label>
@@ -12,4 +12,4 @@ function CreateForm(){
     )
 }
 
-export default CreateForm;
+export default EditForm;
