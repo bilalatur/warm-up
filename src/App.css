@@ -25,6 +25,10 @@
     border-right: 2px solid;
     padding-right: 2%;
 }
+.input-form-des{
+    width: 400px;
+    height: 200px;
+}
 /* Edit Form*/
 .edit-form{
     margin-top: 1%;
@@ -39,4 +43,41 @@
 }
 .input-form{
     margin-left: 1%;
+    width: 400px;
+}
+.input-form-des{
+    margin-left: 1%;
+    width: 400px;
+    height: 200px;
+}
+.submit-form{
+    margin-top: 3%;
+}
+
+/* Home */
+.home-div{
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title-home{
+    font-size: 20px;
+}
+
+/* Blog Entry */
+.entry-btn{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+}
+.div-entry{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    margin: 3%;
+    padding: 2%;
 }
